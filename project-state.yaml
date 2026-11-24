@@ -1,0 +1,48 @@
+project_id: Game2b
+mode: continuous
+current_phase: dt-solution
+requirements_version: 0.2
+gate_status: pending-user-selection
+dt_handoff: pending
+sdlc_release: pending
+final_acceptance: pending
+confirmed:
+  - "Godot project published as a browser-playable web build"
+  - "Two levels, each with one scored interactive learning unit and a KEY reward"
+  - "Show per-level scores and a final progress summary"
+  - "Use Blender to create original 3D environments, characters, and animation"
+  - "Generate three art directions; selected direction governs every scene and character"
+  - "Target repository: https://github.com/profchwu/Game2b"
+  - "Approved visual direction: B — tactile stop-motion 3D"
+assumptions:
+  - "Target learners are provisionally grades 3–6; narrow grade band remains open"
+  - "Balanced educational profile is provisional because the developer asked to finish without answering the priority interview"
+  - "Use fictional dream coins and illustrative outcomes; no real assets, financial products, or investment advice"
+  - "Use original, gentle dreamlike suspense rather than copying Little Nightmares assets or creating age-inappropriate horror"
+  - "No identifiable student data or analytics will be collected by the static game"
+  - "Godot web export will use GDScript and the Compatibility renderer, with web threading disabled unless deployment headers are deliberately configured"
+open_questions:
+  - "Human choice of gameplay concept from docs/design-tournament.md"
+  - "Confirm exact grade band and any classroom accessibility needs"
+artifacts:
+  project_brief: project-brief.md
+  decision_log: decision-log.md
+  change_log: change-log.md
+  design_tournament: docs/design-tournament.md
+  prompt_pack: docs/prompt-pack.md
+  visual_style_guide: docs/visual-style-guide.md
+  approved_style_reference: assets/concepts/approved-style-b-stop-motion.png
+  student_worksheet: docs/student-worksheet.md
+  instructor_rubric: docs/instructor-rubric.md
+  traceability: docs/traceability.md
+required_tests:
+  - "Godot headless project import and scene startup"
+  - "Two-level scoring, KEY unlock, progression, and restart flow"
+  - "Web export served over HTTPS and opened in a supported WebGL 2 browser"
+  - "Keyboard and pointer/touch interaction, responsive layout, Traditional Chinese text, and reduced motion"
+passed_tests: []
+known_limitations:
+  - "The existing HTML prototype is not a Godot build"
+  - "GitHub Pages has not yet been configured for the Godot web export"
+  - "Visual direction and gameplay concept are awaiting the user's selection"
+  - "Blender Toolkit add-on/configuration was not detected; Blender 5.3 executable is present"
