@@ -16,3 +16,8 @@
 - Added single-threaded Web export preset and GitHub Pages Actions deployment workflow.
 - Added Traditional Chinese font and its SIL Open Font License.
 - Verified Godot headless project import and runtime startup. Local Web export needs the matching Godot Web export templates; GitHub Actions downloads templates during CI.
+
+## GitHub CI result — 2026-11-25
+- GitHub Actions run `45574000146` successfully imported assets, exported the Godot Web build, and uploaded the Pages artifact.
+- Deployment stopped because GitHub Pages is not enabled for this repository (`Ensure GitHub Pages has been enabled`, HTTP 404).
+- After setting **Settings → Pages → Build and deployment → Source: GitHub Actions**, push any new commit or run the workflow manually to publish.

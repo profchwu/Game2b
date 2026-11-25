@@ -2,7 +2,7 @@ project_id: Game2b
 mode: continuous
 current_phase: sdlc-build
 requirements_version: 0.2
-gate_status: pending-web-export-and-publish
+gate_status: pending-github-pages-enable
 dt_handoff: pending
 sdlc_release: pending
 final_acceptance: pending
@@ -47,9 +47,9 @@ required_tests:
 passed_tests:
   - "Godot 4.7.2 headless project import completed without asset or script parse errors"
   - "Godot 4.7.2 headless game startup completed without runtime errors"
+  - "GitHub Actions built and exported the Godot 4.7.2 Web project and uploaded its Pages artifact"
 known_limitations:
   - "The existing HTML prototype is not the selected Godot game"
   - "GitHub Pages has not yet been configured for the Godot web export"
-  - "A local Web export was not generated because matching Godot 4.7.2 templates are not installed; CI is configured to install them"
   - "Gameplay C and visual direction B are selected; final learning claims still require learner evidence"
   - "Blender Toolkit add-on/configuration was not detected; Blender 5.3 executable is present"

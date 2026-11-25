@@ -81,3 +81,6 @@ Date: 2026-11-24
 - Two Blender-exported rooms and an animated character are imported as GLB; per-level scoring, retry, KEY gating, final progress recap, restart, and reduced motion are implemented.
 - Added GitHub Pages Actions workflow and a Web export preset. Local Godot startup/import passes. Local export templates are not installed; the workflow obtains them in CI.
 - GitHub Pages must be configured to use GitHub Actions on the first deployment if the repository has not enabled Actions-based Pages before.
+
+## Deployment gate — 2026-11-25
+GitHub Actions successfully builds the Web export and uploads a Pages artifact. The deployment action cannot create a Pages deployment until Pages is enabled for this repository. Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**, then rerun the workflow. The current failed deployment did not publish a site.
