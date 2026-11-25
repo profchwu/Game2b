@@ -1,8 +1,8 @@
 project_id: Game2b
 mode: continuous
-current_phase: dt-solution
+current_phase: sdlc-build
 requirements_version: 0.2
-gate_status: pending-user-selection
+gate_status: pending-web-export-and-publish
 dt_handoff: pending
 sdlc_release: pending
 final_acceptance: pending
@@ -14,6 +14,7 @@ confirmed:
   - "Generate three art directions; selected direction governs every scene and character"
   - "Target repository: https://github.com/profchwu/Game2b"
   - "Approved visual direction: B — tactile stop-motion 3D"
+  - "Approved gameplay: C — 霧中種子園"
 assumptions:
   - "Target learners are provisionally grades 3–6; narrow grade band remains open"
   - "Balanced educational profile is provisional because the developer asked to finish without answering the priority interview"
@@ -22,7 +23,6 @@ assumptions:
   - "No identifiable student data or analytics will be collected by the static game"
   - "Godot web export will use GDScript and the Compatibility renderer, with web threading disabled unless deployment headers are deliberately configured"
 open_questions:
-  - "Human choice of gameplay concept from docs/design-tournament.md"
   - "Confirm exact grade band and any classroom accessibility needs"
 artifacts:
   project_brief: project-brief.md
@@ -32,6 +32,10 @@ artifacts:
   prompt_pack: docs/prompt-pack.md
   visual_style_guide: docs/visual-style-guide.md
   approved_style_reference: assets/concepts/approved-style-b-stop-motion.png
+  system_specification: docs/system-spec.md
+  godot_project: project.godot
+  web_export_preset: export_presets.cfg
+  blender_build_script: tools/build_blender_assets.py
   student_worksheet: docs/student-worksheet.md
   instructor_rubric: docs/instructor-rubric.md
   traceability: docs/traceability.md
@@ -40,9 +44,12 @@ required_tests:
   - "Two-level scoring, KEY unlock, progression, and restart flow"
   - "Web export served over HTTPS and opened in a supported WebGL 2 browser"
   - "Keyboard and pointer/touch interaction, responsive layout, Traditional Chinese text, and reduced motion"
-passed_tests: []
+passed_tests:
+  - "Godot 4.7.2 headless project import completed without asset or script parse errors"
+  - "Godot 4.7.2 headless game startup completed without runtime errors"
 known_limitations:
-  - "The existing HTML prototype is not a Godot build"
+  - "The existing HTML prototype is not the selected Godot game"
   - "GitHub Pages has not yet been configured for the Godot web export"
-  - "Visual direction and gameplay concept are awaiting the user's selection"
+  - "A local Web export was not generated because matching Godot 4.7.2 templates are not installed; CI is configured to install them"
+  - "Gameplay C and visual direction B are selected; final learning claims still require learner evidence"
   - "Blender Toolkit add-on/configuration was not detected; Blender 5.3 executable is present"

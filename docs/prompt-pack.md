@@ -2,7 +2,7 @@
 
 Version: 1.0
 Date: 2026-11-24
-Status: art direction B approved; gameplay concept awaiting owner selection.
+Status: art direction B and gameplay concept C approved.
 
 This file records the project prompts and reusable execution prompts. It includes user-facing project instructions only; it does not include system/developer instructions or private reasoning. Prompts marked **used** were used in this process. Prompts marked **next phase** are prepared for implementation and should be run after the remaining gameplay decision.
 
@@ -22,7 +22,7 @@ This file records the project prompts and reusable execution prompts. It include
 >
 > **已核准美術方向**：B「布偶定格 3D」。嚴格依照 `docs/visual-style-guide.md` 與 `assets/concepts/approved-style-b-stop-motion.png`，統一所有環境、角色、道具、材質、燈光與動畫。布料、補丁、縫線、黏土感造型、手作木頭、黃銅燈籠、暖色微光；神秘但溫暖，適合國小學生。不要把文字畫進貼圖。
 >
-> **玩法待選**：先讀 `docs/design-tournament.md`，等待專案負責人選擇玩法概念；AI 排名只作參考，不要擅自把推薦選項記成核准。Balanced L/E/M/A 權重只是暫定假設，不能宣稱有玩家或學習成效證據。
+> **已選玩法**：C「霧中種子園」。第一關練習為夢想目標存錢；第二關使用虛構種子理解分散配置與投資不確定性。專案負責人選擇優先於 AI 排名；不可把 AI 推薦 A 誤記為核准。Balanced L/E/M/A 權重只是暫定假設，不能宣稱有玩家或學習成效證據。
 >
 > **安全與原創**：只用虛構夢幣和示意情境，不提供個人化投資建議、不使用真實金融商品或即時報價、不保證獲利、不收集可識別學生資料。Little Nightmares 僅作大尺度空間、光影氣氛的高層次參考；不可複製其角色、場景、道具、故事、音樂或標誌。避免血腥、追逐驚嚇與懲罰式失敗。
 >
@@ -58,7 +58,7 @@ All three concepts used the same scene, character, and composition. The attached
 
 ## 6. Godot Web implementation prompt — next phase
 
-> After the owner selects a concept in `docs/design-tournament.md`, implement that concept in Godot 4.7.2 using GDScript and the approved Blender GLB assets. Build exactly two short levels with one primary scored interaction per level. A correct solution unlocks that level's KEY; each level shows its own score. The final screen shows each score, total progress, and a short explanation of demonstrated skills. Include accessible instructions, keyboard/pointer/touch input, feedback, retry/recovery, restart, and reduced-motion behavior. Keep scores deterministic and session-local; no student names, telemetry, account, or real-money/investment data. Do not present profit as guaranteed. Use the Compatibility renderer and a single-threaded Web export unless a tested hosting configuration requires otherwise. Keep source project separate from generated web export; add a GitHub Pages workflow only after the exported game passes verification.
+> Implement selected concept C, Mist Garden, in Godot 4.7.2 using GDScript and the approved Blender GLB assets. Build exactly two short levels with one primary scored interaction per level. Level 1 asks the learner to reserve 2 of 8 fictional dream coins for today's need and save 6 toward a wish. Level 2 asks how to spread four fictional variable seeds across two beds; feedback states that spreading can reduce concentration risk but cannot guarantee against loss. A correct solution unlocks that level's KEY; each level shows its own score. The final screen shows each score, total progress, and a short explanation of demonstrated skills. Include accessible instructions, keyboard/pointer/touch input, feedback, retry/recovery, restart, and reduced-motion behavior. Keep scores deterministic and session-local; no student names, telemetry, account, or real-money/investment data. Do not present profit as guaranteed. Use the Compatibility renderer and a single-threaded Web export unless a tested hosting configuration requires otherwise. Keep source project separate from generated web export; add a GitHub Pages workflow only after the exported game passes verification.
 
 ## 7. Verification and release prompt — next phase
 
@@ -67,6 +67,6 @@ All three concepts used the same scene, character, and composition. The attached
 ## 8. Current status
 
 - Visual direction B is approved and saved as `assets/concepts/approved-style-b-stop-motion.png`.
-- Gameplay selection is still open. Candidate A is recommended but not approved.
+- Gameplay C — Mist Garden is selected by the owner; this overrides the AI recommendation A.
 - The Blender and Godot prompts above are prepared, not yet executed.
 - The current repository already contains an HTML prototype. It is not a Godot Web export and must not be described as one.

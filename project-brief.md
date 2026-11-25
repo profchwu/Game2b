@@ -1,6 +1,6 @@
 # 小小夢魔：夢境理財所 — 專案簡述
 
-Status: draft — gameplay concept selection pending; visual direction B approved
+Status: approved baseline — gameplay C and visual direction B selected
 Requirements version: 0.2
 Date: 2026-11-24
 
@@ -44,7 +44,7 @@ Elementary learners need safe, concrete practice making everyday money choices a
 ### MVP
 
 - Original Godot project in this repository, exported for modern browsers.
-- Two short levels: one focused on budgeting/saving and one on investment uncertainty/risk awareness.
+- Two short levels in the Mist Garden concept: (1) plan and save dream coins for a goal; (2) compare a concentrated seed plan with a spread plan and learn that diversification can reduce concentration risk but cannot guarantee against loss.
 - One clear interaction per level, scored result, explanation, KEY reward, and final progress summary.
 - Blender-made 3D room(s), character, and a small set of cause-and-effect animations after art approval.
 - GitHub Pages deployment after the Godot web export and browser checks.
@@ -92,10 +92,9 @@ Public browser game in the `profchwu/Game2b` GitHub repository, deployed through
 
 ## Open questions
 
-- Which gameplay concept should be selected from the design tournament?
-- Confirm that grades 3–6 and the proposed classroom accessibility needs are suitable.
+- The game will target grades 3–6 provisionally; confirm exact grade band and any classroom accessibility needs.
 - Is grades 3–6 acceptable, or should the game target a narrower band?
 
 ## User approval
 
-Gameplay concept selection is pending. Visual direction B (tactile stop-motion 3D) is approved. The Balanced educational reward profile is provisional.
+Gameplay C (Mist Garden) and visual direction B (tactile stop-motion 3D) are approved. The Balanced educational reward profile and grades 3–6 remain provisional assumptions.

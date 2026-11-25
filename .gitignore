@@ -1,0 +1,7 @@
+.godot/
+.godot-user/
+*.blend1
+*.tmp
+*.log
+build/
+dist/

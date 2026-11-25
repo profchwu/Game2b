@@ -25,11 +25,17 @@
 - Source: user's visual reference and primary Steam listing (Teen-rated horror adventure).
 - Status: confirmed constraint.
 
-## 2026-11-24 — Gameplay and visual choices remain with the owner
+## 2026-11-24 — Gameplay and visual choices presented
 
 - Decision: present ranked gameplay concepts and three generated visual directions; do not start the full game build until both choices are made.
 - Source: game-design skill's human-selection gates and user's explicit request to choose a visual direction.
-- Status: visual direction resolved below; gameplay remains pending.
+- Status: both choices resolved below.
+
+## 2026-11-24 — Gameplay concept C approved
+
+- Decision: use Mist Garden (霧中種子園): Level 1 plans savings for a dream goal; Level 2 compares concentration with spreading fictional seeds to teach risk and uncertainty.
+- Source: explicit user selection of C.
+- Status: confirmed. User choice overrides the AI pre-score ranking; it is not changed to the AI-recommended A.
 
 ## 2026-11-24 — Visual direction B approved
 
